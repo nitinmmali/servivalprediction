@@ -1,0 +1,68 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      <title>Survival Prediction</title>
+	  <div class="container">
+		<div class="row">
+
+		  <form action="http://localhost:5006" method="POST">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="comment">Age:</label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<form action="http://localhost:5006" method="POST">
+			 <div class="col-sm-9">
+			  <div class="form-group  purple-border">
+					<label for="comment">Fare:</label>
+					<textarea class="form-control" rows="2" id="query1" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			  </div>
+			  <form action="http://localhost:5006" method="POST">
+				<div class="col-sm-9">
+			   <div class="form-group  purple-border">
+					<label for="comment">Sex:</label>
+					<textarea class="form-control" rows="2" id="query1" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			  </div>
+			  <form action="http://localhost:5006" method="POST">
+				<div class="col-sm-9">
+			   <div class="form-group  purple-border">
+					<label for="comment">sibsp:</label>
+					<textarea class="form-control" rows="2" id="query1" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			  </div>
+			  <form action="http://localhost:5006" method="POST">
+				  <div class="col-sm-9">
+				 <div class="form-group  purple-border">
+					  <label for="comment">Parch:</label>
+					  <textarea class="form-control" rows="2" id="query1" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+				</div>
+				<form action="http://localhost:5006" method="POST">
+				  <div class="col-sm-9">
+				 <div class="form-group  purple-border">
+					  <label for="comment">Pclass:</label>
+					  <textarea class="form-control" rows="2" id="query1" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+				</div>
+				<form action="http://localhost:5006" method="POST">
+					<div class="col-sm-9">
+				   <div class="form-group  purple-border">
+						<label for="comment">Embarked:</label>
+						<textarea class="form-control" rows="2" id="query1" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+				  </div>
+
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		<div class="row">
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="4" id="comment" name="query15" rows="6" cols="10" autofocus>{{output}}</textarea>
+			</div>
+		</div>
+	</div>
+   </body>
+</html>
